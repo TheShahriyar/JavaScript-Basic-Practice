@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <style>
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .stopwatch-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1.timer {
+      font-size: 80px;
+    }
+
+    button {
+      padding: 10px 30px;
+      border-radius: 0;
+      background-color: #ddd;
+      border: 0;
+      cursor: pointer;
+      margin: 0 5px;
+      font-size: 16px;
+    }
+
+    button:focus {
+      outline: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="stopwatch-wrapper">
+      <h1 class="timer">00:00:00:00</h1>
+      <div class="btn-group">
+        <button type="button" class="start">Start</button>
+        <button type="button" class="pause">Pause</button>
+        <button type="button" class="resume">Resume</button>
+        <button type="button" class="reset">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./stopwatch.js"></script>
+</body>
+
+</html>
